@@ -28,17 +28,11 @@ window.onload = function () {
   let form = document.querySelector('#contact-form');
 
   form.onsubmit = function (event) {
-    // First, check if the form is valid (e.g., not missing required fields).
-    // If it is missing anything, stop the submission now.
     if (!form.checkValidity()) {
-      // Update the CSS to indicate any invalid fields
-      debugger;
       form.classList.add('was-validated');
-      // Stop the form from being submitted until things are filled out
       event.preventDefault();
       return false;
     }
-    // Everything looks good, allow this form to be submitted
     return true;
   };
 };
