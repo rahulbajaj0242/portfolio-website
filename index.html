@@ -1,0 +1,431 @@
+<!-- Add <a href="https://www.freepik.com/vectors/coder">Coder vector created by upklyak - www.freepik.com</a> in footer for credit -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7cacb6feb1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Final</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h3 id="logo">RB</h3>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#form">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="home">
+        <div class="container">
+          <div class="home-content">
+            <div class="content-intro">
+              <h3>Hi, I'm</h3>
+              <h3 id="name">Rahul Bajaj</h3>
+              <p class="quotation-mark">“</p>
+              <p class="quote-text">
+                A Web Developer who loves <br />
+                creating meaningful <br />
+                and beautiful websites
+              </p>
+              <a href="./files/resume.png" download="resume.png"
+                ><button
+                  type="button"
+                  id="download-btn"
+                  class="btn btn-primary"
+                >
+                  <i class="fa-solid fa-download"></i> Resume
+                </button></a
+              >
+
+              <br />
+              <button
+                type="button"
+                id="contact-btn"
+                class="btn btn-secondary"
+                onclick="location.href='#form';"
+              >
+                Contact Me
+              </button>
+            </div>
+            <div class="content-image">
+              <img src="./images/Programming-amico.png" alt="image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <div class="card-container">
+            <div class="card card-about">
+              <h3>About Me</h3>
+              <p>
+                I'm a computer programming student who loves problem solving and
+                web development. I aspire to be a web developer and someday own
+                a web development agency. My other hobbies/interests include
+                watches, food and cats.
+              </p>
+            </div>
+            <div class="card card-info">
+              <h3>Basic Information</h3>
+              <ul>
+                <li>
+                  Age: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; 19
+                </li>
+                <li>
+                  Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; rbajaj12@myseneca.ca
+                </li>
+                <li>
+                  Language: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; English
+                </li>
+                <li>Class Section: &nbsp; &nbsp; &nbsp; NAA</li>
+                <li>
+                  Student ID:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 107707218
+                </li>
+                <li>
+                  Instructor:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  David Humphrey
+                </li>
+              </ul>
+            </div>
+            <div class="card card-honesty">
+              <h3>Academic Honesty</h3>
+              <p>
+                I declare that my assessment is wholly my own work in accordance
+                with Seneca Academic Policy. No part of this assessment has been
+                copied manually or electronically from any other source
+                (including web sites) except for the information supplied by the
+                WEB222 instructors and / or made available in this assessment
+                for my use. I also declare that no part of this assignment has
+                been distributed to other students.
+              </p>
+              <p class="date">
+                Date: <time datetime="2022-04-12">April 12, 2022</time>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="education">
+        <img src="./images/ed.jpg" alt="" id="ed-image" />
+        <div class="container">
+          <h3 id="ed-title">Education</h3>
+          <div class="ed-card-container">
+            <div class="ed-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-building-columns fa-4x"></i>
+              </div>
+              <div class="ed-card-content">
+                <h4>Computer Programming Diploma</h4>
+                <h5>Seneca College</h5>
+                <p>2021-2023 (expected)</p>
+              </div>
+            </div>
+            <div class="ed-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-school fa-4x"></i>
+              </div>
+              <div class="ed-card-content">
+                <h4>High School Graduation</h4>
+                <h5>DCM International School</h5>
+                <p>2019-2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="form">
+        <div class="container">
+          <hr />
+          <h3 id="form-title">Contact Me</h3>
+          <form
+            id="contact-form"
+            action="https://httpbin.org/post"
+            method="post"
+          >
+            <div class="row">
+              <div class="form-group col">
+                <label for="fname"
+                  ><span class="text-danger">*</span> First Name</label
+                >
+                <input
+                  class="form-control"
+                  id="fname"
+                  name="fname"
+                  autocomplete="given-name"
+                  type="text"
+                  autofocus
+                  tabindex="1"
+                  required
+                />
+              </div>
+              <div class="form-group col">
+                <label for="lname"
+                  ><span class="text-danger">*</span> Last Name</label
+                >
+                <input
+                  class="form-control"
+                  id="lname"
+                  name="lname"
+                  autocomplete="family-name"
+                  type="text"
+                  tabindex="2"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col">
+                <label for="email"
+                  ><span class="text-danger">*</span> Email Address</label
+                >
+                <input
+                  id="email"
+                  class="form-control"
+                  name="email"
+                  autocomplete="email"
+                  type="email"
+                  tabindex="4"
+                  required
+                />
+              </div>
+              <div class="form-group col">
+                <label for="phone">Phone Number</label>
+                <input
+                  id="phone"
+                  class="form-control"
+                  name="phone"
+                  autocomplete="tel"
+                  type="tel"
+                  tabindex="5"
+                />
+                <small class="form-text text-muted">Optional</small>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col">
+                <label for="address"
+                  ><span class="text-danger">*</span> Address</label
+                >
+                <input
+                  id="address"
+                  class="form-control"
+                  name="address"
+                  autocomplete="street-address"
+                  type="text"
+                  tabindex="6"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col">
+                <label for="city"
+                  ><span class="text-danger">*</span> City</label
+                >
+                <input
+                  id="city"
+                  class="form-control"
+                  name="city"
+                  autocomplete="address-level2"
+                  list="city-list"
+                  tabindex="7"
+                  required
+                />
+                <datalist id="city-list">
+                  <option value="Toronto"></option>
+                  <option value="Montreal"></option>
+                  <option value="Victoria"></option>
+                  <option value="Halifax"></option>
+                  <option value="Quebec City"></option>
+                  <option value="Calgary"></option>
+                  <option value="Edmonton"></option>
+                </datalist>
+              </div>
+              <div class="form-group col">
+                <label for="province"
+                  ><span class="text-danger">*</span> Province</label
+                >
+                <select
+                  id="province"
+                  class="form-control"
+                  name="province"
+                  autocomplete="address-level1"
+                  tabindex="8"
+                >
+                  <option>Alberta</option>
+                  <option>British Columbia</option>
+                  <option>Manitoba</option>
+                  <option>New Brunswick</option>
+                  <option>Newfoundland and Labrador</option>
+                  <option>Northwest Territories</option>
+                  <option>Nova Scotia</option>
+                  <option>Nunavut</option>
+                  <option selected>Ontario</option>
+                  <option>Prince Edward Island</option>
+                  <option>Quebec</option>
+                  <option>Saskatchewan</option>
+                  <option>Yukon</option>
+                </select>
+              </div>
+              <div class="form-group col">
+                <label for="postal-code"
+                  ><span class="text-danger">*</span> Postal Code</label
+                >
+                <input
+                  id="postal-code"
+                  class="form-control"
+                  name="post-code"
+                  autocomplete="postal-code"
+                  type="text"
+                  tabindex="9"
+                  placeholder="M1R 1R1"
+                  pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Enter a valid Canadian Postal Code
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col">
+                <label class="mr-3"
+                  ><span class="text-danger">*</span> Message Type:</label
+                >
+                <div class="form-check form-check-inline">
+                  <!-- Default to morning -->
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    onclick="removeRateField();"
+                    name="message-type"
+                    id="type-question"
+                    value="question"
+                    checked
+                    tabindex="10"
+                  />
+                  <label class="form-check-label" for="type-question"
+                    >Question</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="message-type"
+                    onclick="removeRateField();"
+                    id="type-comment"
+                    value="comment"
+                    tabindex="11"
+                  />
+                  <label class="form-check-label" for="type-comment"
+                    >Comment</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    onclick="makeRateField();"
+                    name="message-type"
+                    id="type-hiring"
+                    value="hiring"
+                    tabindex="12"
+                  />
+                  <label class="form-check-label" for="prefer-evening"
+                    >Hiring</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div id="hourly-rate" class="form-group col"></div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col">
+                <label for="messgae-area">Message</label>
+                <textarea
+                  id="messgae-area"
+                  class="form-control"
+                  name="message"
+                  rows="5"
+                  tabindex="13"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="d-flex flex-row-reverse mt-2">
+              <input
+                class="btn btn-primary"
+                type="submit"
+                name="submit"
+                value="Submit"
+                tabindex="15"
+              />
+              <input
+                class="btn btn-secondary mr-3"
+                type="reset"
+                name="reset"
+                value="Reset"
+                tabindex="16"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p>Rahul Bajaj</p>
+        <p>Final Assignment</p>
+        <p>
+          <a href="https://www.freepik.com/vectors/backend"
+            >Backend vector created by storyset - www.freepik.com</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
